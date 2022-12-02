@@ -1,15 +1,3 @@
 (let ((input (uiop:read-file-lines "02.input")))
-
-  (let* ((score-list '(("A X" . 4) ("A Y" . 8) ("A Z" . 3)
-                       ("B X" . 1) ("B Y" . 5) ("B Z" . 9)
-                       ("C X" . 7) ("C Y" . 2) ("C Z" . 6)))
-         (scores (make-hash-table :test #'equal)))
-    (dolist (s score-list) (setf (gethash (car s) scores) (cdr s)))
-    (print (loop for round in input sum (gethash round scores))))
-
-  (let* ((score-list '(("A X" . 3) ("A Y" . 4) ("A Z" . 8)
-                       ("B X" . 1) ("B Y" . 5) ("B Z" . 9)
-                       ("C X" . 2) ("C Y" . 6) ("C Z" . 7)))
-         (scores (make-hash-table :test #'equal)))
-    (dolist (s score-list) (setf (gethash (car s) scores) (cdr s)))
-    (print (loop for round in input sum (gethash round scores)))))
+  (print (loop for round in input sum (/ (search round "   B XC YA ZA XB YC ZC XA YB Z") 3)))
+  (print (loop for round in input sum (/ (search round "   B XC XA XA YB YC YC ZA ZB Z") 3))))
