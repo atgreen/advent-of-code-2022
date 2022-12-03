@@ -7,8 +7,7 @@ https://adventofcode/2022
 Learnings
 ---------
 
-Learnings from 2021: https://github.com/atgreen/advent-of-code-2021/blob/main/README.md
-Learnings from 2020: https://github.com/atgreen/advent-of-code-2020/blob/main/README.md
+Learnings from prior years: [2021](https://github.com/atgreen/advent-of-code-2021/blob/main/README.md) [2020](https://github.com/atgreen/advent-of-code-2020/blob/main/README.md)
 
 Here are some of my personal learnings from 2022.
 
