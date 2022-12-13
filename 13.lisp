@@ -35,7 +35,6 @@
                           (append '("[[2]]" "[[6]]")
                                    (remove "" (uiop:read-file-lines "13.input") :test #'equal))))
            (slines (sort lines (lambda (l r) (eq (compare l r) 1)))))
-      (print slines)
       (flet ((match-packets (a b)
                (string= (format nil "~A" a) (format nil "~A" b))))
         (print (* (1+ (position '((2)) slines :test #'match-packets))
