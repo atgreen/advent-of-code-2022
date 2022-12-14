@@ -48,7 +48,6 @@
                      ((null (gethash (+ p #c(1 1)) cave))
                       (setf p (+ p #c(1 1))))
                      (t
-                      (print p)
                       (setf (gethash p cave) :sand)
                       (incf sand)
                       (setf p #c(500 0)))))))
