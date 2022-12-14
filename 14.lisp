@@ -10,7 +10,7 @@
                     (if (eq (imagpart (- s e)) 0)
                         0
                         (* 1 (if (< (imagpart (- s e)) 0) 1 -1))))))
-    (loop for line in (uiop:read-file-lines "/home/green/git/advent-of-code-2022/14.input")
+    (loop for line in (uiop:read-file-lines "14.input")
           do (loop with rock = (read-from-string (format nil "(~A)" (str:remove-punctuation line)))
                    and x = nil
                    and y = nil
